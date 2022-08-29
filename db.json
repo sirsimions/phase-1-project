@@ -1,0 +1,139 @@
+{
+    "students": [
+      {
+        "id": "1",
+        "name": "Chriss Nande",
+        "age": "12",
+        "gender": "Male",
+        "score": 80,
+        "grade": "A",
+        "Favorite_animal": "https://th.bing.com/th/id/OIP.eC71bWnaUhFoHxWR9AjGrAHaFj?w=252&h=189&c=7&r=0&o=5&pid=1.7"
+      },
+      {
+        "id": "2",
+        "name": "James Kane",
+        "age": "13",
+        "gender": "Male",
+        "score": 72,
+        "grade": "B",
+        "Favorite_animal": "https://th.bing.com/th/id/OIP.5d_b8nmpGLLdXgaf62slnAHaE7?w=279&h=185&c=7&r=0&o=5&pid=1.7"
+      },
+      {
+        "id": "3",
+        "name": "Cynthia Toroh",
+        "age": "15",
+        "gender": "Female",
+        "score": 92,
+        "grade": "A",
+        "Favorite_animal": "https://th.bing.com/th/id/OIP.vPSu81p2tgGSYH_dCoGp_QHaHJ?w=197&h=190&c=7&r=0&o=5&pid=1.7"
+      },
+      {
+        "id": "4",
+        "name": "Kenedy Wayne",
+        "age": "13",
+        "gender": "Male",
+        "score": 78,
+        "grade": "B",
+        "Favorite_animal": "https://th.bing.com/th/id/OIP.e-FKkuyl-OA3ULFVC3YYzQHaFj?w=249&h=187&c=7&r=0&o=5&pid=1.7"
+      },
+      {
+        "id": "5",
+        "name": "Faith Duarte",
+        "age": "14",
+        "gender": "Female",
+        "score": 96,
+        "grade": "A",
+        "Favorite_animal": "https://th.bing.com/th/id/OIP.DQy9vvospNxOH_KKpNNYuQHaFh?w=259&h=193&c=7&r=0&o=5&pid=1.7"
+      },
+      {
+        "id": "6",
+        "name": "Linda Turner",
+        "age": "16",
+        "gender": "Female",
+        "score": 89,
+        "grade": "A",
+        "Favorite_animal": "https://th.bing.com/th/id/OIP.Nm23eKXkFn3D6UhtpVLyNAHaE7?w=299&h=200&c=7&r=0&o=5&pid=1.7"
+      },
+      {
+        "id": "7",
+        "name": "Fedinand Thomas",
+        "age": "14",
+        "gender": "Male",
+        "score": 82,
+        "grade": "A",
+        "Favorite_animal": "https://th.bing.com/th/id/OIP.moTzk-r3ln8pVXjC_hQt8QHaFj?w=222&h=180&c=7&r=0&o=5&pid=1.7"
+      },
+      {
+        "id": "8",
+        "name": "Jeremy Chris",
+        "age": "13",
+        "gender": "Male",
+        "score": 90,
+        "grade": "A",
+        "Favorite_animal": "https://th.bing.com/th/id/OIP.tzvMVZy3iG5yt_1u0QGjpwHaEo?w=280&h=180&c=7&r=0&o=5&pid=1.7"
+      },
+      {
+        "id": "9",
+        "name": "Jane Algernon",
+        "age": "14",
+        "gender": "Female",
+        "score": 78,
+        "grade": "B",
+        "Favorite_animal": "https://th.bing.com/th/id/OIP.MdvZ4pXH1Jse2WA7-_cUZQHaE8?w=306&h=187&c=7&r=0&o=5&pid=1.7"
+      },
+      {
+        "id": "10",
+        "name": "Gabriella Alihandro",
+        "age": "13",
+        "gender": "Female",
+        "score": 80,
+        "grade": "A",
+        "Favorite_animal": "https://www.gstatic.com/tv/thumb/v22vodart/42171/p42171_v_v8_ab.jpg"
+      },
+      {
+        "id": "11",
+        "name": "Janestiner Bob",
+        "age": "15",
+        "gender": "Female",
+        "score": 84,
+        "grade": "A",
+        "Favorite_animal": "https://th.bing.com/th/id/OIP._Fkm8XRbhj3mHJXvaXiorQHaEl?w=280&h=180&c=7&r=0&o=5&pid=1.7"
+      },
+      {
+        "id": "12",
+        "name": "Patricia Washington",
+        "age": "12",
+        "gender": "Female",
+        "score": 87,
+        "grade": "A",
+        "Favorite_animal": "https://th.bing.com/th/id/OIP.LC42tAHYmGngRwlINERgbQHaEK?w=303&h=180&c=7&r=0&o=5&pid=1.7"
+      },
+      {
+        "id": "13",
+        "name": "Anthony Liner",
+        "age": "14",
+        "gender": "Male",
+        "score": 58,
+        "grade": "D",
+        "Favorite_animal": "https://th.bing.com/th/id/OIP.v3xevce88aGARzQ6DkzPjgHaEK?w=301&h=180&c=7&r=0&o=5&pid=1.7"
+      },
+      {
+        "id": "14",
+        "name": "Patrick Martial",
+        "age": "12",
+        "gender": "Male",
+        "score": 79,
+        "grade": "B",
+        "Favorite_animal": "https://th.bing.com/th/id/OIP.AQnBWORGn-oc8oy3aotlkwEsDI?w=284&h=189&c=7&r=0&o=5&pid=1.7"
+      },
+      {
+        "id": "15",
+        "name": "Diana Fedrico",
+        "age": "14",
+        "gender": "Female",
+        "score": 92,
+        "grade": "A",
+        "Favorite_animal": "https://th.bing.com/th/id/OIP.EDrjmBoF-FTZeBOT0hJCywHaFn?w=215&h=180&c=7&r=0&o=5&pid=1.7"
+      }
+    ]
+  }
