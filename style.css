@@ -11,6 +11,7 @@ body {
     border-radius: 12px;
     display: flex;
     flex-direction: row;
+    
   }
 
   .subheader {
@@ -24,7 +25,7 @@ body {
   }
 
   .Logo{
-    margin-top: 13px;
     font-size: 20px;
+    font-family: 'Great Vibes', cursive;
     
   }
