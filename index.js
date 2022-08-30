@@ -78,6 +78,30 @@ function median(array){
        })  
 }
 function stdev(array){
+    let marks = []
+    for(let mark of array){
+        marks.push(mark.score)
+        console.log(marks)
+        console.log(marks.length)
+    }
+    let average = marks.reduce((accum, initval)=>{
+        return accum + initval
+    }, 0) / marks.length;
     
-}
+    
+    marks = marks.map((elem)=>{
+        return (elem - average) ** 2
+    })
+    
+    let total = marks.reduce((accum, initval)=> accum + initval, 0);
+    let stdval = Math.sqrt(total/marks.length)
+    console.log(stdval)
+    
+    let stdnbuton = document.getElementById('stdnbuton')
+    stdnbuton.addEventListener('click', ()=>{
+        let stdvalOutput = document.getElementById('stdev')
+        stdvalOutput.innerHTML = `The standard deviation of the class mean score is ${stdval}`
+    })
+    }
+
 
