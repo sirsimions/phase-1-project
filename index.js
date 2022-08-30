@@ -13,7 +13,6 @@ fetch('http://localhost:3000/students')
 })
 
 function display(array){
-    //let studentNames = []
     for(let stud of array){
        let li = document.createElement('li')
        let div = document.getElementById('classlist')
@@ -23,25 +22,31 @@ function display(array){
        but.appendChild(li)
        li.innerHTML = stud.name
        console.log(li.innerHTML)
-       
-       //studentNames.push(stud.name)
-       //let names = document.getElementById('classlist')
-       
     }
 }
 function mean(array){
     let studentScore = []
-    for(let stud of array){
-       let div = document.getElementById('classlist')
-       let but = document.createElement('button')
-       but.className  = 'btn'
-       div.appendChild(but)
-       but.appendChild(li)
-       li.innerHTML = stud.name
-       console.log(li.innerHTML)
-       
-       //studentNames.push(stud.name)
-       //let names = document.getElementById('classlist')
-       
+       let totalScore = 0;
+       for(let scor of array){
+           studentScore.push(scor.score)
+           console.log(studentScore)
+           
+       totalScore = parseInt(totalScore) + parseInt(scor.score)
     }
+
+       console.log(totalScore)
+       console.log(studentScore.length)
+       let avScore =  totalScore/studentScore.length
+       console.log(avScore)
+
+       let meanbutt = document.getElementById('meanbuton')
+       meanbutt.addEventListener('click', ()=>{
+        let meanVal = document.getElementById('mean')
+    
+       meanVal.innerHTML = `The mean score for the class is ${avScore}`
+       
+       })
+       
+   // }
 }
+
