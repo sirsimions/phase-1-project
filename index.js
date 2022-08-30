@@ -12,7 +12,7 @@ fetch('http://localhost:3000/students')
     mean(array)
     median(array)
     stdev(array)
-    range()
+    rangeValue(array)
 })
 
 function display(array){
@@ -104,14 +104,21 @@ function stdev(array){
         stdvalOutput.innerHTML = `The standard deviation of the class mean score is ${stdval}`
     })
     }
-    function range(array){
+    function rangeValue(array){
         let rangeArray = []
-        for(let values of array){
-            rangeArray.push(values.score) 
+        for(let value of array){
+            rangeArray.push(value.score)
+            console.log(rangeArray)
         }
         let newArray = [...rangeArray]
-        newArray.sort()
-        console,log(newArray)
+        newArray.sort(function(a, b){return a-b})
+        console.log(newArray)
+        range = newArray[newArray.length-1] - newArray[0]
+        rangebut = document.getElementById('rangebuton')
+        rangebut.addEventListener('click', ()=>{
+            const output = document.getElementById('range')
+            output.innerHTML = `The range of the test score is ${range}`
+        })
     }
 
 
