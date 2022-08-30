@@ -1,18 +1,12 @@
 fetch('http://localhost:3000/students')
-.then(res =>{
-    if(res.ok){
-        return res.json()
-    }
-    else{
-        throw new error('Database loading problem')
-    }
-} )
+.then(res =>res.json())
 .then(array=>{
     display(array)
     mean(array)
     median(array)
     stdev(array)
     rangeValue(array)
+    overal(array)
 })
 
 function display(array){
@@ -89,7 +83,6 @@ function stdev(array){
         return accum + initval
     }, 0) / marks.length;
     
-    
     marks = marks.map((elem)=>{
         return (elem - average) ** 2
     })
@@ -120,5 +113,61 @@ function stdev(array){
             output.innerHTML = `The range of the test score is ${range}`
         })
     }
+        function overal(array){
+            let marks = []
+               for(let mark of array){
+                marks.push(mark.score)
+            let average = marks.reduce((accum, initval)=>{
+                return accum + initval
+            }, 0) / marks.length;
+            console.log(average)
+
+            let total = marks.reduce((accum, initval)=> accum + initval, 0);
+            let stdval = Math.sqrt(total/marks.length)
+            console.log(stdval)
+
+            let newArray = [...marks]
+            newArray.sort(function(a, b){return a-b})
+           let max = newArray[newArray.length-1] 
+           let min = newArray[0]
+
+            let btn1 = document.getElementById('overalbuton')
+            btn1.addEventListener('click', ()=>{
+                if(average>80 && average < 100){
+                    let overgrade = document.getElementById('overgrade')
+                    overgrade.innerHTML = `Since the average score is ${average}, the class has an overal grade of A`
+                }
+                if(average<80 && average > 70){
+                    let overgrade = document.getElementById('overgrade')
+                    overgrade.innerHTML = `Since the average score is ${average}, the class has an overal grade of B`
+                }
+                if(average<70 && average > 60){
+                    let overgrade = document.getElementById('overgrade')
+                    overgrade.innerHTML = `Since the average score is ${average}, the class has an overal mean of C`
+                }
+                if(average<60 && average > 50){
+                    let overgrade = document.getElementById('overgrade')
+                    overgrade.innerHTML = `Since the average score is ${average}, the class has an overal mean of D`
+                }
+                if(average<50){
+                    let overgrade = document.getElementById('overgrade')
+                    overgrade.innerHTML = `The class has failed since it has a mean scorescore (${average}) less than 50`
+                }
+
+                let dist = document.getElementById('dist')
+                    dist.innerHTML = `The mean ranges within ${average} ± ${stdval}`
+
+                    let high = document.getElementById('high')
+                    high.innerHTML = `The highest student attained a score of ${max}`
+
+                    let low = document.getElementById('low')
+                    low.innerHTML = `The lowest student attained a score of ${min}`
+
+            })
+        }
+      
+    }
 
 
+
+                

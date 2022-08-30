@@ -27,6 +27,7 @@ body {
   .Logo{
     font-size: 20px;
     font-family: 'Great Vibes', cursive;
+    margin-left: 32%;
   }
 
   #members{
@@ -90,4 +91,7 @@ body {
 .btn{
     width: 30%;
     list-style-type: none;
+}
+.studdetail{
+  margin-bottom: 40px; 
 }
