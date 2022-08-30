@@ -12,6 +12,7 @@ fetch('http://localhost:3000/students')
     mean(array)
     median(array)
     stdev(array)
+    range()
 })
 
 function display(array){
@@ -102,6 +103,15 @@ function stdev(array){
         let stdvalOutput = document.getElementById('stdev')
         stdvalOutput.innerHTML = `The standard deviation of the class mean score is ${stdval}`
     })
+    }
+    function range(array){
+        let rangeArray = []
+        for(let values of array){
+            rangeArray.push(values.score) 
+        }
+        let newArray = [...rangeArray]
+        newArray.sort()
+        console,log(newArray)
     }
 
 
