@@ -12,6 +12,13 @@ There are currently no issues that affect the functionality of the app. The stab
 ## Technologies Used
 The app was developed using three technologies namely HTML v. 5, JavaScript, and CSS. HTML was used to create the web page and styling was done using CSS. JavaScript was mainly used to interact with the DOM and provide the interactivity.
 ## Support and contact details
-This app represents the first version. In this case, it is still work in progress. In case a user encounters issues or experiences a bug, kindly feel free to reach the developer through ##simion.okola@student.moringaschool.com
+This app represents the first version. In this case, it is still work in progress. In case a user encounters issues or experiences a bug, kindly feel free to reach the developer through simion.okola@student.moringaschool.com
+### License
+Performance Analysis App is an open source application licensed under MIT. The developer grants permission to: 
+* Commercial use
+* Modification
+* Distribution 
+The developer does not provide warranty and won't be held liable for any issue or problem that emanates from the use of the appp. 
+Copyright (c) {2022} **{Simion Okola}**
 
 
