@@ -95,3 +95,14 @@ body {
 .studdetail{
   margin-bottom: 40px; 
 }
+
+.footer {
+  background-color: #54c7f9;
+  margin-bottom: 20px;
+  padding: 5px 0px 5px 15px;
+  height: 100px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%;
+}
