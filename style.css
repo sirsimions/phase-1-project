@@ -126,3 +126,8 @@ body {
 #submit{
   width: 5%;
 }
+#font{
+  font-size: small;
+  font-weight: bold;
+  
+}
