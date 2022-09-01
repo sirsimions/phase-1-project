@@ -1,6 +1,8 @@
 body {
     background-color: #ebebeb;
     box-sizing: border-box;
+    
+    
   }
   
   .navbar {
@@ -91,6 +93,7 @@ body {
 .btn{
     width: 30%;
     list-style-type: none;
+    background-color: none;
 }
 .studdetail{
   margin-bottom: 40px; 
@@ -98,11 +101,28 @@ body {
 
 .footer {
   background-color: #54c7f9;
-  margin-bottom: 20px;
+  margin-bottom: 0%;
   padding: 5px 0px 5px 15px;
   height: 80px;
   border-radius: 12px;
   display: flex;
   flex-direction: row;
-  margin-top: 3%;
+  margin-top: 1.4%;
+}
+.commenting{
+  margin-top: 2%;
+}
+#commentArea{
+  border: 0px;
+  width: 30%;
+  height: 12%;
+  position: absolute;
+  top: 82%;
+  left: 36%;
+  border-radius: 12px;
+  text-align: center;
+  /*text-align: center;*/
+}
+#submit{
+  width: 5%;
 }

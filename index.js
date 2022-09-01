@@ -1,3 +1,9 @@
+let overgrade = document.getElementById('overgrade')
+let dist = document.getElementById('dist')
+let high = document.getElementById('high')
+let low = document.getElementById('low')
+
+document.addEventListener('DOMContentLoaded', ()=>{
 fetch('http://localhost:3000/students')
 .then(res =>res.json())
 .then(array=>{
@@ -7,7 +13,10 @@ fetch('http://localhost:3000/students')
     stdev(array)
     rangeValue(array)
     overal(array)
+    comment()
+
 })
+
 
 function display(array){
     for(let stud of array){
@@ -19,6 +28,13 @@ function display(array){
        but.appendChild(li)
        li.innerHTML = stud.name
        console.log(li.innerHTML)
+
+       but.addEventListener("click", () => {
+        overgrade.textContent = `Name: ${stud.name}`;
+        dist.textContent = `Gender: ${stud.gender}`;
+        high.textContent = `Age: ${stud.age}`;
+        low.textContent = `Score: ${stud.score}`
+       })
     }
 }
 function mean(array){
@@ -40,7 +56,7 @@ function mean(array){
        meanbutt.addEventListener('click', ()=>{
         let meanVal = document.getElementById('mean')
     
-       meanVal.innerHTML = `The mean score for the class is ${avScore}`
+       meanVal.innerHTML = `The mean score for the class is ${avScore.toFixed(4)}`
        
        })  
 }
@@ -94,7 +110,7 @@ function stdev(array){
     let stdnbuton = document.getElementById('stdnbuton')
     stdnbuton.addEventListener('click', ()=>{
         let stdvalOutput = document.getElementById('stdev')
-        stdvalOutput.innerHTML = `The standard deviation of the class mean score is ${stdval}`
+        stdvalOutput.innerHTML = `The standard deviation of the class mean score is ${stdval.toFixed(4)}`
     })
     }
     function rangeValue(array){
@@ -111,6 +127,14 @@ function stdev(array){
         rangebut.addEventListener('click', ()=>{
             const output = document.getElementById('range')
             output.innerHTML = `The range of the test score is ${range}`
+        })
+    }
+    function comment(){
+        let comment = document.getElementById('submit');
+        comment.addEventListener('click', ()=>{
+            document.getElementById('commentArea').innerHTML = `Comment: ${document.getElementById('comment').value}`
+            document.getElementById('commentArea').style.backgroundColor = `#95d7f3`;
+
         })
     }
         function overal(array){
@@ -134,39 +158,30 @@ function stdev(array){
             let btn1 = document.getElementById('overalbuton')
             btn1.addEventListener('click', ()=>{
                 if(average>80 && average < 100){
-                    let overgrade = document.getElementById('overgrade')
-                    overgrade.innerHTML = `Since the average score is ${average}, the class has an overal grade of A`
+                    overgrade.innerHTML = `Since the average score is ${average.toFixed(4)}, the class has an overal grade of A`
                 }
                 if(average<80 && average > 70){
-                    let overgrade = document.getElementById('overgrade')
-                    overgrade.innerHTML = `Since the average score is ${average}, the class has an overal grade of B`
+                    overgrade.innerHTML = `Since the average score is ${average.toFixed(4)}, the class has an overal grade of B`
                 }
                 if(average<70 && average > 60){
-                    let overgrade = document.getElementById('overgrade')
-                    overgrade.innerHTML = `Since the average score is ${average}, the class has an overal mean of C`
+                    overgrade.innerHTML = `Since the average score is ${average.toFixed(4)}, the class has an overal mean of C`
                 }
                 if(average<60 && average > 50){
-                    let overgrade = document.getElementById('overgrade')
-                    overgrade.innerHTML = `Since the average score is ${average}, the class has an overal mean of D`
+                    overgrade.innerHTML = `Since the average score is ${average.toFixed(4)}, the class has an overal mean of D`
                 }
                 if(average<50){
-                    let overgrade = document.getElementById('overgrade')
-                    overgrade.innerHTML = `The class has failed since it has a mean scorescore (${average}) less than 50`
+                    overgrade.innerHTML = `The class has failed since it has a mean scorescore (${average.toFixed(4)}) less than 50`
                 }
-
-                let dist = document.getElementById('dist')
-                    dist.innerHTML = `The mean ranges within ${average} ± ${stdval}`
-
-                    let high = document.getElementById('high')
+                    dist.innerHTML = `The mean ranges within ${average.toFixed(4)} ± ${stdval.toFixed(4)}`
                     high.innerHTML = `The highest student attained a score of ${max}`
-
-                    let low = document.getElementById('low')
                     low.innerHTML = `The lowest student attained a score of ${min}`
 
             })
         }
       
     }
+    
+})
 
 
 
