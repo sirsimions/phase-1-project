@@ -13,11 +13,9 @@ fetch('http://localhost:3000/students')
     stdev(array)
     rangeValue(array)
     overal(array)
-    comment()
+    comment(array)
 
 })
-
-
 function display(array){
     for(let stud of array){
        let li = document.createElement('li')
