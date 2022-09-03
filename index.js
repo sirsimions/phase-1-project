@@ -131,7 +131,7 @@ function stdev(array){
         let comment = document.getElementById('submit');
         comment.addEventListener('click', ()=>{
             document.getElementById('commentArea').innerHTML = `Comment: ${document.getElementById('comment').value}`
-            document.getElementById('commentArea').style.backgroundColor = `#95d7f3`;
+            document.getElementById('commentArea').style.backgroundColor = `rgb(0, 174, 255)`;
 
         })
     }
