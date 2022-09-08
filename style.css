@@ -144,3 +144,21 @@ body {
 .input{
   width: 100px;
 }
+.footer {
+  /*background-color: #54c7f9;*/
+  margin-bottom: 20px;
+  padding: 5px 0px 5px 15px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-family: 'Great Vibes', cursive;
+  position: absolute;
+  top: 1344%;
+  width: 98%;
+
+}

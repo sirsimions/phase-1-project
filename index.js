@@ -40,8 +40,12 @@ function display(array){
     function comment(){
         let comment = document.getElementById('submit');
         comment.addEventListener('click', ()=>{
+            if(`${document.getElementById('comment').value}`=== ""){
+                document.getElementById('commentArea').innerHTML = "You have not rated the app"
+            }
+            else{
             document.getElementById('commentArea').innerHTML = `You have given this app ${document.getElementById('comment').value} star rating`
-           
+            }
         })
     }
        
