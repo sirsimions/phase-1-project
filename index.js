@@ -38,9 +38,10 @@ function display(array){
 }
 
     function comment(){
-        let comment = document.getElementById('submit');
-        comment.addEventListener('click', ()=>{
-            if(`${document.getElementById('comment').value}`=== ""){
+        let comment = document.getElementsByClassName('buton');
+        comment.addEventListener('submit', (e)=>{
+            e.preventDefault();
+            if(`${document.getElementsByClassName('comment').value}`=== ""){
                 document.getElementById('commentArea').innerHTML = "You have not rated the app"
             }
             else{
