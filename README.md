@@ -1,11 +1,11 @@
-# Performance Analysis App
-#### The current application is a web app that facilitates overal analysis of students performance. This current version of the app is dated September 1, 2022.
+# Covid 19 Checker App
+#### The current application is a web app that enables individuals to assess the status of covid 19 of a country before traveling. This current version of the app is dated September 1, 2022.
 #### By **Simion Okola**
 ## Live Link
 https://sirsimions.github.io/phase-1-project/
 ## Description
 ## Description
-This app provides a solution to most challenges faced by classroom teachers. Traditionally, institutions rely on Excel to perform statistical analysis. While Excel tends to be robust, its efficiency relies on one's knowledge of functions. The current app therefore, addresses this challenge by provoding an app that fetches data from a database and calculates crucial measures of central tendency and dispersion including mean, median, standard deviation, and range by simply clicking appropriate buttons. Moreover, once the page loades, it automatically fetches all the students' details and displays them on the web. Individual student details can be viewed by clicking the name. The app also does a comparison internally and determines the overal grade of the class, and also outputs highest and lowest scores. 
+This app provides a solution to most challenges faced by tourist and other people interested in travelling to different places of the world. Currently, people have to conduct multiple searches to obtain information of a particular country's  Covid 19 status. The current app therefore, addresses this challenge by provoding an app that fetches data from a public database and display crucial statistics such as number of confirmed cases, deaths, recoveries, and country's geolocation. One only needs to click the country of interest to view all the information. 
 ## Setup and Installation Requirements
 * The requirements for hosting of this app include domain name, hosting provider, and hosting plan. 
 * There are no additional codes required. No dependencies are required for this app to run. However, the app needs a     database and servers because the app fetches data for analysis. 
