@@ -43,7 +43,7 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 36%;
+    left: 46%;
     top: 12%;
     
   }
@@ -53,7 +53,7 @@ body {
     height: 38px;
     text-align: center;
     font-size: larger;
-    align-items: cente;
+    align-items: center;
   }
   div#statistics{
     width: 28%;
@@ -112,20 +112,25 @@ body {
 }
 .commenting{
   margin-top: 2%;
+  position: absolute;
+  top: 86%;
+  right: 36%;
 }
 #commentArea{
   border: 0px;
   width: 30%;
   height: 12%;
   position: absolute;
-  top: 82%;
-  left: 36%;
+  top: 90%;
+  right: 12%;
   border-radius: 12px;
   text-align: center;
+  color: white;
+  font-size: larger;
  
 }
 #submit{
-  width: 5%;
+  width: 30%;
 }
 #font{
   font-size: small;
@@ -140,7 +145,5 @@ body {
   width: 100px;
 }
 #meanbuton{
-  position: relative;
-  top: 300px;
-  right: 8px;
+  
 }
